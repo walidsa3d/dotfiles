@@ -1,0 +1,58 @@
+sudo apt-add-repository ppa:mc3man/mpv-tests
+sudo apt-add-repository ppa:ffmulticonverter/stable
+sudo apt-add-repository ppa:webupd8team/y-ppa-manager
+sudo apt-add-repository ppa:team-xbmc/ppa
+sudo apt-add-repository ppa:linrunner/tlp
+sudo apt-add-repository ppa:videolan/stable-daily
+sudo apt-add-repository ppa:rvm/testing
+sudo apt-add-repository 'http://packages.linuxmint.com qiana main upstream import'
+sudo apt-add-repository 'http://extra.linuxmint.com qiana main'
+sudo apt-add-repository 'http://archive.ubuntu.com/ubuntu trusty main restricted universe multiverse'
+sudo apt-add-repository 'http://archive.ubuntu.com/ubuntu trusty-updates main restricted universe multiverse'
+sudo apt-add-repository 'http://security.ubuntu.com/ubuntu/ trusty-security main restricted universe multiverse'
+sudo apt-add-repository 'http://archive.canonical.com/ubuntu/ trusty partner'
+sudo apt-add-repository ppa:webupd8team/subtitle-utils
+sudo apt-add-repository ppa:wagungs/kali-linux1
+sudo apt-add-repository ppa:webupd8team/popcorntime
+sudo apt-add-repository 'https://get.docker.com/ubuntu docker main'
+sudo apt-add-repository ppa:openshot.developers/ppa
+sudo apt-add-repository ppa:linuxonly/modem+manager+gui
+sudo apt-add-repository ppa:hsoft/ppa
+sudo apt-add-repository ppa:ubuntu-desktop/ubuntu-make
+sudo apt-add-repository ppa:whatsapp-purple/ppa
+sudo apt-add-repository ppa:peterlevi/ppa
+sudo apt-add-repository ppa:webupd8team/tribler
+sudo apt-add-repository ppa:videolan/master-daily
+sudo apt-add-repository ppa:ricotz/docky
+sudo apt-add-repository ppa:kazam-team/unstable-series
+sudo apt-add-repository 'http://dl.google.com/linux/chrome/deb/ stable main'
+sudo apt-add-repository ppa:wagungs/kali-linux
+sudo apt-add-repository ppa:russell-s-stewart/ppa
+sudo apt-add-repository ppa:fossfreedom/rhythmbox-plugins
+sudo apt-add-repository ppa:paolorotolo/android-studio
+sudo apt-add-repository ppa:ubuntuhandbook1/corebird
+sudo apt-add-repository ppa:finalterm/daily
+sudo apt-add-repository ppa:libreoffice/libreoffice-4-3
+sudo apt-add-repository ppa:osd-lyrics/ppa
+sudo apt-add-repository ppa:webupd8team/atraci
+sudo apt-add-repository ppa:shutter/ppa
+sudo apt-add-repository ppa:glennric/dolphin-emu
+sudo apt-add-repository ppa:nilarimogard/webupd8
+sudo apt-add-repository ppa:ubuntu-wine/ppa
+sudo apt-add-repository ppa:i2p.packages/i2p
+sudo apt-add-repository ppa:didrocks/ubuntu-developer-tools-center
+sudo apt-add-repository ppa:format-junkie-team/release
+sudo apt-add-repository ppa:jon-severinsson/ffmpeg
+sudo apt-add-repository ppa:wrinkliez/ppasearch
+sudo apt-add-repository ppa:fossfreedom/rhythmbox
+sudo apt-add-repository ppa:noobslab/apps
+sudo apt-add-repository ppa:vincent-c/cherrytree
+sudo apt-add-repository 'http://download.opensuse.org/repositories/home:/sergey-vlasov:/Nulloy/xUbuntu_14.04/ /'
+sudo apt-add-repository ppa:wagungs/kali-linux2
+sudo apt-add-repository ppa:webupd8team/java
+sudo apt-add-repository 'http://dl.google.com/linux/chrome/deb/ stable main'
+sudo apt-add-repository ppa:webupd8team/atom
+sudo apt-add-repository ppa:hydr0g3n/qbittorrent-stable
+sudo apt-add-repository ppa:mutate/ppa
+sudo apt-add-repository ppa:sven-eckelmann/ppa-mupen64plus
+sudo apt-add-repository ppa:hollywood/ppa
