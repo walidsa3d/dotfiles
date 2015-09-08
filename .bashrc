@@ -112,3 +112,24 @@ swish(){
 moveup(){
 find -mindepth 2 -type f -print -exec mv {} . \;
 }
+  function apt-history(){
+          case "$1" in
+            install)
+                  grep 'install ' /var/log/dpkg.log
+                  ;;
+            upgrade|remove)
+                  grep $1 /var/log/dpkg.log
+                  ;;
+            rollback)
+                  grep upgrade /var/log/dpkg.log | \
+                      grep "$2" -A10000000 | \
+                      grep "$3" -B10000000 | \
+                      awk '{print $4"="$5}'
+                  ;;
+            *)
+                  cat /var/log/dpkg.log
+                  ;;
+          esac
+    }
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

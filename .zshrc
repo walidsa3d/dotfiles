@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="gnzh"
+ZSH_THEME="norm"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -45,7 +45,7 @@ ZSH_THEME="gnzh"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git cp extract history sublime autojump pip web-search colored-man)
+plugins=(history autojump web-search colored-man chucknorris command-not-found httpie lwd lol npm pip sublime thefuck urltools)
 
 # User configuration
 
@@ -76,10 +76,27 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="nano ~/.zshrc"
+alias ohmyzsh="nano ~/.oh-my-zsh"
 source ~/.bashalias
 # hack to launch bicon if not launched
-if ! [[ "$(ps -p $(ps -p $(echo $$) -o ppid=) -o comm=)" =~ 'bicon'* ]]; then
-  bicon.bin
-fi
+#if ! [[ "$(ps -p $(ps -p $(echo $$) -o ppid=) -o comm=)" =~ 'bicon'* ]]; then
+#  bicon.bin
+#fi
+source antigen.zsh
+#antigen use oh-my-zsh
+antigen bundle djui/alias-tips
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle ascii-soup/zsh-url-highlighter
+antigen bundle marzocchi/zsh-notify
+#antigen bundle npm
+#antigen bundle pip
+#antigen bundle node
+#antigen bundle rsync
+#antigen bundle command-not-found
+#antigen bundle common-aliases
+export CDPATH='~/Desktop:/mnt/store' 
+
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

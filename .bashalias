@@ -37,7 +37,7 @@ alias lsd='ls -d */'
 alias mkdir="mkdir -pv"
 alias ping="ping -c 5"
 alias desk="cd ~/Desktop"
-alias bashrc="sublime ~/.bashrc"
+alias bashrc="sublime ~/.bashrc &"
 alias c='clear'
 alias reload='source ~/.bashrc'
 alias subl='sudo sublime'
@@ -50,3 +50,26 @@ export PYTHONSTARTUP="$HOME/.pythonrc"
 eval "$(fasd --init auto)"
 alias m='f -e mplayer' # quick opening files with mplayer
 alias o='a -e xdg-open' # quick opening files with xdg-ope
+alias npmi="sudo npm install"
+alias open="xdg-open"
+alias subs="subliminal -l en -p opensubtitles -s"
+listpack(){
+awk '$1 == "Package:" { if (a[$2]++ == 0) print $2; }' /var/lib/apt/lists/*$1*$2*Packages
+
+}
+plays(){
+	$z="x";
+	if [[$z="x"]]
+	then
+		echo "hello"
+	else
+		echo $1
+	fi
+}
+#youtube-dl -q -o- $2 | mplayer -cache 8192  -;
+##################################################git
+alias ga="git add -A"
+alias gcm="git commit -m"
+alias gp="git push"
+alias gt="git tag"
+alias gra="git remote add origin"
