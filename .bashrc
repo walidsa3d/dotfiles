@@ -133,3 +133,6 @@ find -mindepth 2 -type f -print -exec mv {} . \;
     }
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# added by travis gem
+[ -f /home/walid/.travis/travis.sh ] && source /home/walid/.travis/travis.sh

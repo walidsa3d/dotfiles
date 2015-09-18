@@ -73,3 +73,11 @@ alias gcm="git commit -m"
 alias gp="git push"
 alias gt="git tag"
 alias gra="git remote add origin"
+##################################################
+alias grep='grep --color=auto'
+
+alias sign='gpg --detach-sign --armor'
+
+alias p=' ps aux | grep'
+alias k9='kill -9'
+

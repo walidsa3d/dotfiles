@@ -1,11 +1,17 @@
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="norm"
+source ~/.zsh/exports.zsh
+ZSH_THEME="pygmalion"
+source ~/.zsh/ohmyplugins.zsh
+source ~/.zsh/options.zsh
+source ~/.zsh/aliases.zsh
+source ~/.zsh/functions.zsh
+#source ~/.zsh/colors.zsh
+source ~/.zsh/history.zsh
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -45,14 +51,10 @@ ZSH_THEME="norm"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(history autojump web-search colored-man chucknorris command-not-found httpie lwd lol npm pip sublime thefuck urltools)
-
 # User configuration
-
-export PATH="/home/walid/bin/localbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 # export MANPATH="/usr/local/man:$MANPATH"
-
 source $ZSH/oh-my-zsh.sh
+
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -64,39 +66,15 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-alias zshconfig="nano ~/.zshrc"
-alias ohmyzsh="nano ~/.oh-my-zsh"
-source ~/.bashalias
 # hack to launch bicon if not launched
 #if ! [[ "$(ps -p $(ps -p $(echo $$) -o ppid=) -o comm=)" =~ 'bicon'* ]]; then
 #  bicon.bin
 #fi
-source antigen.zsh
-#antigen use oh-my-zsh
-antigen bundle djui/alias-tips
-antigen bundle zsh-users/zsh-completions
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle ascii-soup/zsh-url-highlighter
-antigen bundle marzocchi/zsh-notify
-#antigen bundle npm
-#antigen bundle pip
-#antigen bundle node
-#antigen bundle rsync
-#antigen bundle command-not-found
-#antigen bundle common-aliases
-export CDPATH='~/Desktop:/mnt/store' 
 
+# added by travis gem
+[ -f /home/walid/.travis/travis.sh ] && source /home/walid/.travis/travis.sh
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
