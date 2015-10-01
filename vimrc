@@ -195,4 +195,15 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 let g:ycm_min_num_of_chars_for_completion = 1
 let g:ycm_auto_trigger = 1
 let g:ycm_filetype_whitelist = { 'cpp': 1, 'c': 1, 'python':1 }
+""map Ctrl-a to select all
+map <C-a> <esc>ggVG<CR>
+"" Alt-j to move line or block down, Alt-k to move it up
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+"git commit messages
+autocmd Filetype gitcommit setlocal spell textwidth=72
 
