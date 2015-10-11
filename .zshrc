@@ -4,14 +4,14 @@
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-source ~/.zsh/exports.zsh
+source ~/dotfiles/.zsh/exports.zsh
 ZSH_THEME="pygmalion"
-source ~/.zsh/ohmyplugins.zsh
-source ~/.zsh/options.zsh
-source ~/.zsh/aliases.zsh
-source ~/.zsh/functions.zsh
-#source ~/.zsh/colors.zsh
-source ~/.zsh/history.zsh
+source ~/dotfiles/.zsh/ohmyplugins.zsh
+source ~/dotfiles/.zsh/options.zsh
+source ~/dotfiles/.zsh/aliases.zsh
+source ~/dotfiles/.zsh/functions.zsh
+#source ~/dotfiles/.zsh/colors.zsh
+source ~/dotfiles/.zsh/history.zsh
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
