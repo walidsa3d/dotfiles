@@ -47,7 +47,7 @@ extract() {
     fi
 }
 mkalias(){
-  echo "alias $1='$2'" >>~/.zsh/aliases.zsh
+  echo "alias $1='$2'" >>~/dotfiles/.zsh/aliases.zsh
 }
 ip(){
   echo "External IP:"
@@ -71,7 +71,12 @@ release() {
   git commit
   git tag $version
 }
-
+fixzshistory(){
+  cd
+  mv .zsh_history .zsh_history_bad
+  strings .zsh_history_bad > .zsh_history
+  fc -R .zsh_histo
+}
 
 
 

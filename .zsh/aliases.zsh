@@ -10,9 +10,13 @@ alias auto="sudo apt-get autoremove"
 
 #############Python###############
 alias pipi='sudo pip install'
-alias pipu='sudo pip uninstall'
+alias pipr='sudo pip uninstall'
+alias pipu='sudo pip --upgrade'
 alias pips='sudo pip search'
 alias piserve="python -m SimpleHTTPServer"
+alias flake="flake8 --immediate"
+alias pyupload='sudo python setup.py sdist upload -r pypi'
+alias pyregister='sudo python setup.py register -r pypi'
 ##################################
 ###############Bookmarks
 alias desk="cd ~/Desktop"
@@ -32,8 +36,13 @@ alias gp="git push"
 alias gt="git tag"
 alias gra="git remote add origin"
 alias gb="git branch"
-#alias gco="git checkout"
-#alias master="git checkout master"
+alias gco='git checkout'
+alias ga='git add -A .'
+alias gcm='git add -A . && git commit'
+alias gst='git status'
+alias glog='git log'
+alias gslog='git shortlog'
+alias gcp='git add -A . && git commit && git push origin master'
 ##################################################
 alias grep='grep -i --color=auto'
 alias sign='gpg --detach-sign --armor'
@@ -41,7 +50,6 @@ alias ls='ls --color=auto'
 ##############Process
 alias p=' ps aux | grep'
 alias k9='kill -9'
-
 #################Core
 if hash tree 2>/dev/null; then
     alias ts="tree -L 1 -shF --dirsfirst"
@@ -71,19 +79,7 @@ alias mkdir="mkdir -pv"
 alias c='clear'
 alias symlink='ln -s'
 alias bumpversion='bumpversion --allow-dirty'
-alias gco='git checkout'
-alias ga='git add -A .'
-alias gcm='git add -A . && git commit'
-alias gst='git status'
-alias glog='git log'
-alias gslog='git shortlog'
-alias gcp='git add -A . && git commit && git push origin master'
 alias py='python'
 alias symlink='ln -s'
 alias changelog='gitchangelog'
 alias gf='git flow'
-alias flake="flake8 --immediate"
-
-
-alias pyupload='sudo python setup.py sdist upload -r pypi'
-alias pyregister='sudo python setup.py register -r pypi'

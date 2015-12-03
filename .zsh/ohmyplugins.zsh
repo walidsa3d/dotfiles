@@ -17,5 +17,6 @@ urltools
 git-flow-completion
 git-extras
 sudo
+fabric
 zsh-syntax-highlighting
 )

@@ -78,3 +78,6 @@ source $ZSH/oh-my-zsh.sh
 # added by travis gem
 [ -f /home/walid/.travis/travis.sh ] && source /home/walid/.travis/travis.sh
 
+
+export NVM_DIR="/home/walid/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
