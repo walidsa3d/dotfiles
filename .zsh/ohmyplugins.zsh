@@ -1,6 +1,7 @@
 plugins=(
 almostontop 
 history
+fasd
 autojump
 web-search
 colored-man

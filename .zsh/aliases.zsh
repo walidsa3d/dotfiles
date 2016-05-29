@@ -1,3 +1,9 @@
+# apt-get install python-pip
+# pip install flake8
+# pip install bumpversion
+# pip install gitchangelog
+# apt-get install tree
+#
 ##############APT####################
 alias srch='sudo apt-cache search'
 alias inst='sudo apt-get install'
@@ -26,7 +32,6 @@ alias subl='sudo sublime'
 alias eclipse="/home/walid/bin/eclipse/eclipse"
 alias npmi="sudo npm install"
 alias open="xdg-open"
-alias subs="subliminal -l en -p opensubtitles -s"
 
 #youtube-dl -q -o- $2 | mplayer -cache 8192  -;
 #################Git
@@ -83,3 +88,5 @@ alias py='python'
 alias symlink='ln -s'
 alias changelog='gitchangelog'
 alias gf='git flow'
+alias checkport='lsof -i TCP:'
+alias prettyj='python -m json.tool|pygmentize -l javascript|less'

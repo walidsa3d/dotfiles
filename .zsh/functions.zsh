@@ -71,13 +71,21 @@ release() {
   git commit
   git tag $version
 }
+# fix corrupt zsh history
 fixzshistory(){
   cd
   mv .zsh_history .zsh_history_bad
   strings .zsh_history_bad > .zsh_history
   fc -R .zsh_histo
 }
+# pretty print json output of curl
+jcurl(){
+curl "$@" |python -m json.tool|pygmentize -l json|less
+}
+# turn .pem certs t .cer ones
+pem2cer(){
+openssl x509 -inform PEM -in $1 -outform DER -out $2
 
-
+}
 
 

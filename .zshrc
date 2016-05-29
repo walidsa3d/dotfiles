@@ -5,7 +5,7 @@
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 source ~/dotfiles/.zsh/exports.zsh
-ZSH_THEME="pygmalion"
+ZSH_THEME="pygmalion" #pygmalion
 source ~/dotfiles/.zsh/ohmyplugins.zsh
 source ~/dotfiles/.zsh/options.zsh
 source ~/dotfiles/.zsh/aliases.zsh
@@ -55,7 +55,7 @@ source ~/dotfiles/.zsh/history.zsh
 # export MANPATH="/usr/local/man:$MANPATH"
 source $ZSH/oh-my-zsh.sh
 
-
+source ~/Desktop/almostontop.plugin.zsh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
