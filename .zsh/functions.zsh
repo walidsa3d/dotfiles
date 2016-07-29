@@ -82,10 +82,32 @@ fixzshistory(){
 jcurl(){
 curl "$@" |python -m json.tool|pygmentize -l json|less
 }
+jcurl2(){
+curl "$@" |jq -C .|less -R
+}
 # turn .pem certs t .cer ones
 pem2cer(){
 openssl x509 -inform PEM -in $1 -outform DER -out $2
-
+}
+xcurl() {
+curl "$@" |xmlstarlet format|pygmentize -l xml|less
+}
+ppgrep() {
+    if [[ $1 == "" ]]; then
+        PERCOL=percol
+    else
+        PERCOL="percol --query $1"
+    fi
+    ps aux | eval $PERCOL | awk '{ print $2 }'
 }
 
+ppkill() {
+    if [[ $1 =~ "^-" ]]; then
+        QUERY=""            # options only
+    else
+        QUERY=$1            # with a query
+        [[ $# > 0 ]] && shift
+    fi
+    ppgrep $QUERY | xargs kill $*
+}
 
